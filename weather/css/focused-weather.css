@@ -14,10 +14,54 @@
 *
 * ****************************** */
 
-/* Imports*/
+/* 1.  Includes (fonts and supplementary stylesheets)*/
 
-/*Normalize css import, makes all browsers read the same basic css*/
+/* 1.1 Normalize*/
 @import "normalize.css";
-/* Sansita font for headings */
+/* 1.2 Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
+/*General Styles (for all pages and devices)*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+}
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: sansita, Eurostyle, sans-serif;
+}
+
+.tile{
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+nav ul li { 
+    display: inline-block; 
+    list-style: none; 
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer{
+    margin-bottom: 2em;
+}
+
+#site-brand {
+    font-size: 2em;
+    font-weight: 600;
+}
