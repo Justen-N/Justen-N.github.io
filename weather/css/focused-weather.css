@@ -68,13 +68,13 @@ footer{
 }
 /* 3.  Mobile First (styles specific to small screens)*/
 
-header{
+#page-header{
     position:fixed;
     top:0;
     left:0;
 }
 
-#logo{
+#page-header>img{
     margin: 0,0,0,0;
     size:5px;
 }
