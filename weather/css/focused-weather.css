@@ -75,6 +75,6 @@ footer{
 }
 
 #page-header>img{
-    margin: 0,0,0,0;
-    size:5px;
+    width:10vw;
+    height:10vw;
 }
