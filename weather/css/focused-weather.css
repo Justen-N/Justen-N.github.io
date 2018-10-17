@@ -35,7 +35,11 @@ body{
     font-size: 20px;
 }
 
-  h1,h2,h3,h4,h5,h6 {
+header{
+    position:fixed;
+    margin-top:2em;
+}
+h1,h2,h3,h4,h5,h6 {
     font-family: sansita, Eurostyle, sans-serif;
 }
 
@@ -65,3 +69,4 @@ footer{
     font-size: 2em;
     font-weight: 600;
 }
+/* 3.  Mobile First (styles specific to small screens)*/
