@@ -73,6 +73,8 @@ header{
     top:0;
     left:0;
 }
+
 #logo{
-    size:25px;
+    margin: 0,0,0,0;
+    size:5px;
 }
