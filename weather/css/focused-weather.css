@@ -35,10 +35,7 @@ body{
     font-size: 20px;
 }
 
-header{
-    position:fixed;
-    margin-top:2em;
-}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: sansita, Eurostyle, sans-serif;
 }
@@ -70,3 +67,8 @@ footer{
     font-weight: 600;
 }
 /* 3.  Mobile First (styles specific to small screens)*/
+
+header{
+    position:fixed;
+    margin-top:2em;
+}
