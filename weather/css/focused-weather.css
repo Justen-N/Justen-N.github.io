@@ -1,0 +1,23 @@
+/* ******************************
+*  Stylesheet for Screened Devices
+*  Created by: Justen Neeley
+*  
+*  1.  Includes (fonts and supplementary stylesheets)
+*  1.1 Normalize
+*  1.2 Google fonts
+*
+*  2.  General Styles (for all pages and devices)
+*
+*  3.  Mobile First (styles specific to small screens)
+*
+*  4.  Large Screen Styles (Media Queries begin here)
+*
+* ****************************** */
+
+/* Imports*/
+
+/*Normalize css import, makes all browsers read the same basic css*/
+@import "normalize.css";
+/* Sansita font for headings */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
