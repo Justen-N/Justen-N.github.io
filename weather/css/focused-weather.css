@@ -71,17 +71,11 @@ footer{
 }
 /* 3.  Mobile First (styles specific to small screens)*/
 
-#page-header{
+#page-header *{
     /*position:fixed;*/
     top:0;
     left:0;
-    font-size:3vw;
-}
-#page-header p{
-    margin:0px;
-}
-#page-header h1{
-    margin:0px;
+    margin:0;
 }
 #page-header img{
     width:1em;
