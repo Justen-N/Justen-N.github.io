@@ -68,11 +68,13 @@ footer{
 }
 /* 3.  Mobile First (styles specific to small screens)*/
 
-#page-header>p{
+#page-header{
     position:fixed;
     top:0;
     left:0;
-    font-size:3vw;
+}
+#site-brand{
+    font-size: 3vw;
 }
 #page-header h1{
     margin:0px,0px,0px,0px;
