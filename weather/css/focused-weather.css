@@ -68,14 +68,14 @@ footer{
 }
 /* 3.  Mobile First (styles specific to small screens)*/
 
-#page-header{
+#page-header>p{
     position:fixed;
     top:0;
     left:0;
-    font-size:5vw;
+    font-size:2px;
 }
 
 #page-header>img{
-    width:10vw;
-    height:10vw;
+    width:2vw;
+    height:2vw;
 }
