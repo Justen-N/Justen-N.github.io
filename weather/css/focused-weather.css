@@ -75,7 +75,7 @@ footer{
     font-size:2px;
 }
 
-#page-header>img{
-    width:2vw;
-    height:2vw;
+#page-header img{
+    width:1em;
+    height:1em;
 }
