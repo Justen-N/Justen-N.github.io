@@ -56,6 +56,9 @@ nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    border: 1px,solid,black;
+    font-size: 3vw;
+    padding-left:0px;
 }
 
 footer{
@@ -83,9 +86,4 @@ footer{
 #page-header img{
     width:1em;
     height:1em;
-}
-nav{
-    border: 1px,solid,black;
-    font-size: 5vw;
-    padding-left:0px;
 }
