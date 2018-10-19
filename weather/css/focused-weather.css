@@ -72,10 +72,10 @@ footer{
     position:fixed;
     top:0;
     left:0;
-    font-size:2px;
+    font-size:3vw;
 }
 
 #page-header img{
-    width:1em;
-    height:1em;
+    width:3vw;
+    height:3vw;
 }
