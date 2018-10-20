@@ -95,12 +95,12 @@ h2{
 #temps span{
     font-size:2em;
     text-align: center;
-    margin: 10px, 10px;
     display: inline-block;
 }
 
 #high-temp{
     color:red;
+    margin-right:10;
 }
 
 #low-temp{
