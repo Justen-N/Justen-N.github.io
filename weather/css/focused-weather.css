@@ -98,6 +98,7 @@ h2{
 #high-temp, #low-temp{
     text-align: center;
     margin: 10px, 10px;
+    display: inline-block;
 }
 #high-temp{
     color:red;
