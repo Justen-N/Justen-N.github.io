@@ -83,6 +83,12 @@ h2{
 #page-header p{
     font-size: .5em;
 }
+
+.tile{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
 #page-header img{
     width:1em;
     height:1em;
@@ -99,7 +105,6 @@ h2{
     font-size:2em;
     text-align: center;
     display: inline-block;
-    text-align: center
 }
 
 #high-temp{
