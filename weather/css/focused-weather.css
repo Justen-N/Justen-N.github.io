@@ -117,11 +117,13 @@ h1{
 }
 span p{
     display:inline-block;
+
 }
 
 #high-temp{
     color:red;
-    margin-right:10px, 0px;
+    margin-right:10px,;
+    margin-top:0px;
 }
 
 #low-temp{
