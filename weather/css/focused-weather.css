@@ -91,4 +91,12 @@ h2{
     font-size:3em;
     margin: auto;
 }
+#high-temp{
+    font-size:.5em;
+    color:red;
+}
+#low-temp{
+    font-size:.5em;
+    color:blue;
+}
 }
