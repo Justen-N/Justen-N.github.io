@@ -93,15 +93,14 @@ h2{
     margin: auto;
     text-align:center;
 }
-
-#high-temp{
+#high-temp, #low-temp{
     font-size:2em;
+    margin:0px, 10px;
+}
+#high-temp{
     color:red;
-    text-align:center;
 }
 #low-temp{
-    font-size:2em;
     color:blue;
-    text-align:center;
 }
 }
