@@ -72,7 +72,7 @@ footer{
 /* 3.  Mobile First (styles specific to small screens)*/
 @media screen and (max-width: 600px){
 h2{
-    visibility: hidden;
+    display:none;
 }
 #page-header *{
     /*position:fixed;*/
@@ -84,9 +84,7 @@ h2{
     width:1em;
     height:1em;
 }
-.tile{
-    float:center;
-}
+
 #current-temp{
     font-size:10em;
     float: center;
@@ -99,7 +97,7 @@ h2{
 }
 #high-temp, #low-temp{
     text-align: center;
-    margin: 10px;
+    margin: 10px, 10px;
 }
 #high-temp{
     color:red;
