@@ -117,7 +117,7 @@ h1{
 }
 span p{
     display:inline-block;
-    margin:0px;
+    margin:0px, 0px, 25px;
 }
 
 #high-temp{
