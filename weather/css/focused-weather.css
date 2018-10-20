@@ -89,8 +89,12 @@ h2{
 }
 #current-temp{
     font-size:5em;
-    float:center;
+    float: center;
     margin: auto;
+}
+#temps p{
+    text-align:center;
+
 }
 #high-temp{
     font-size:2em;
