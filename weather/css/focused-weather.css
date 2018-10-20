@@ -70,7 +70,10 @@ footer{
     font-weight: 600;
 }
 /* 3.  Mobile First (styles specific to small screens)*/
-
+@media screen and (max-width: 600px){
+h2{
+    visibility: hidden;
+}
 #page-header *{
     /*position:fixed;*/
     top:0;
@@ -80,4 +83,5 @@ footer{
 #page-header img{
     width:1em;
     height:1em;
+}
 }
