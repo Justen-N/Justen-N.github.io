@@ -130,7 +130,7 @@ span p{
     color:blue;
     margin-top:0px;
 }
-#temps span *{
+#temps p{
     margin:0px;
 }
 }
