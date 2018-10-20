@@ -88,7 +88,7 @@ h2{
     float:center;
 }
 #current-temp{
-    font-size:5em;
+    font-size:10em;
     float: center;
     margin: auto;
     text-align:center;
@@ -96,6 +96,10 @@ h2{
 #high-temp, #low-temp{
     font-size:2em;
     margin:0px, 10px;
+}
+#high-temp, #low-temp{
+    text-align: center;
+    margin: 10px;
 }
 #high-temp{
     color:red;
