@@ -78,7 +78,7 @@ h2{
     /*position:fixed;*/
     top:0;
     left:0;
-    margin:0;
+    margin:0
 }
 #page-header img{
     width:1em;
@@ -86,23 +86,23 @@ h2{
 }
 
 #current-temp{
-    font-size:10em;
+    font-size:9em;
     float: center;
     margin: auto;
     text-align:center;
 }
-#high-temp, #low-temp{
+
+#temps span{
     font-size:2em;
-    margin:0px, 10px;
-}
-#high-temp, #low-temp{
     text-align: center;
     margin: 10px, 10px;
     display: inline-block;
 }
+
 #high-temp{
     color:red;
 }
+
 #low-temp{
     color:blue;
 }
