@@ -88,15 +88,16 @@ h2{
     float:center;
 }
 #current-temp{
-    font-size:3em;
+    font-size:5em;
+    float:center;
     margin: auto;
 }
 #high-temp{
-    font-size:.5em;
+    font-size:2em;
     color:red;
 }
 #low-temp{
-    font-size:.5em;
+    font-size:2em;
     color:blue;
 }
 }
