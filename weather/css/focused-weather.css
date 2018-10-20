@@ -99,15 +99,17 @@ h2{
     font-size:2em;
     text-align: center;
     display: inline-block;
+    text-align: center
 }
 
 #high-temp{
     color:red;
-    margin-right:10;
+    margin-right:10px;
 }
 
 #low-temp{
     color:blue;
+
 }
 #hourly ul{
     list-style-type:none;
