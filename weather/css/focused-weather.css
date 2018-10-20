@@ -74,6 +74,7 @@ footer{
 h2{
     display:none;
 }
+
 #page-header *{
     /*position:fixed;*/
     top:0;
@@ -120,7 +121,7 @@ span p{
 
 #high-temp{
     color:red;
-    margin-right:10px;
+    margin-right:10px, 0px;
 }
 
 #low-temp{
