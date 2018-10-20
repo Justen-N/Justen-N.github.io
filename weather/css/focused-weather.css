@@ -85,8 +85,8 @@ h2{
 }
 
 .tile{
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 75%;
     text-align: center;
 }
 #page-header img{
@@ -118,5 +118,6 @@ h2{
 }
 #hourly ul{
     list-style-type:none;
+    text-align: center;
 }
 }
