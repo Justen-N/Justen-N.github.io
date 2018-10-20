@@ -84,4 +84,11 @@ h2{
     width:1em;
     height:1em;
 }
+.tile{
+    float:center;
+}
+#current-temp{
+    font-size:3em;
+    margin: auto;
+}
 }
