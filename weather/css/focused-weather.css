@@ -129,7 +129,8 @@ span p{
 #low-temp{
     color:blue;
     margin-top:0px;
-
 }
-
+#temps span *{
+    margin:0px;
+}
 }
