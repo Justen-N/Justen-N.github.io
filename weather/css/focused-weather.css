@@ -103,4 +103,7 @@ h2{
 #low-temp{
     color:blue;
 }
+#hourly ul{
+    list-style-type:none;
+}
 }
