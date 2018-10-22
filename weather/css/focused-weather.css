@@ -138,4 +138,5 @@ span p{
 #flex-container{
     display:flex;
     flex-wrap:wrap;
+    flex-direction:row;
 }
