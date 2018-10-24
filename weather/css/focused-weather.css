@@ -70,10 +70,7 @@ footer{
     font-weight: 600;
 }
 /* 3.  Mobile First (styles specific to small screens)*/
-@media screen and (max-width: 600px){
-h2{
-    display:none;
-}
+
 
 #page-header *{
     /*position:fixed;*/
@@ -134,9 +131,11 @@ span p{
 #temps p{
     margin:0px;
 }
-}
-#flex-container{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
+
+
+/* large screen rules*/
+@media screen and (min-width:750px){
+    /*all large \screen css rules go here*/
+    
+
 }
