@@ -69,6 +69,10 @@ footer{
     font-size: 2em;
     font-weight: 600;
 }
+section>div{
+    display:inline-block;
+}
+
 /* 3.  Mobile First (styles specific to small screens)*/
 
 
@@ -107,15 +111,12 @@ h1{
     text-align:center;
 }
 
-#temps span{
+#temps {
     font-size:2em;
     text-align: center;
     margin:auto;
 }
-span p{
-    display:inline-block;
-    margin:0px;
-}
+
 
 #high-temp{
     color:red;
@@ -139,7 +140,7 @@ span p{
     nav>ul{
         display:flex;
         position: inherit;
-        
+
     }
 
 }
