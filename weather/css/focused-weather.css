@@ -131,6 +131,9 @@ h1{
 #conditions img{
     width:inherit;
 }
+h1{
+    margin:0px;
+}
 
 
 /* large screen rules*/
@@ -138,30 +141,40 @@ h1{
     /*all large \screen css rules go here*/
     nav>ul{
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
+        align-content:flex-start;
+        font-size: .5em;
+        padding:0px;
+        width:75%;
+        border:2px solid black;
+    }
+    body{
+        margin:.5em;
     }
     nav{
         position: static;
     }
+
     #flex-container{
         display:flex;
-        justify-content:space-between;
         align-content:space-between;
     }
 
     #conditions{
         flex: 0 0 40%;
+ 
     }
     .tile{
         margin:.4em;
+        height:inherit;
     }
     #wind{
         flex-grow: .5;
         flex-basis:0;
-        height:inherit;
+
     }
     #temps{
-        height:inherit;
+
         flex-grow:.5;
         flex-basis:0;
         font-size:2em;
@@ -183,5 +196,9 @@ h1{
     }
     #site-brand{
         font-size: 5em;
+    }
+    footer{
+        border-top:3px solid black;
+        margin-top:20px;
     }
 }
