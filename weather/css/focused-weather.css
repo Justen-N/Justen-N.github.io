@@ -77,7 +77,6 @@ footer{
 
 
 #page-header *{
-    /*position:fixed;*/
     top:0;
     left:0;
     margin:0
@@ -101,20 +100,17 @@ h1{
 }
 #page-header img{
     width:1em;
-    height:1em;
 }
 
 #current-temp{
-    font-size:7em;
+    font-size:3em;
     float: center;
     margin: auto;
     text-align:center;
 }
 
 #temps {
-    font-size:2em;
     text-align: center;
-    margin:auto;
 }
 
 
@@ -132,25 +128,44 @@ h1{
 #temps p{
     margin:0px;
 }
+#conditions img{
+    width:inherit;
+}
 
 
 /* large screen rules*/
 @media screen and (min-width:750px){
     /*all large \screen css rules go here*/
     nav>ul{
-        display:flex;
-        justify-content:space-between;
+        display: flex;
+        justify-content: space-between;
     }
     nav{
         position: static;
     }
     #flex-container{
         display:flex;
-    }
-    .tile{
-        
+        justify-content:space-between;
+        align-content:space-between;
     }
 
+    #conditions{
+        flex: 0 0 40%;
+    }
+    .tile{
+        margin:.4em;
+    }
+    #wind{
+        flex-grow: .5;
+        flex-basis:0;
+        height:inherit;
+    }
+    #temps{
+        height:inherit;
+        flex-grow:.5;
+        flex-basis:0;
+        font-size:2em;
+    }
     #hourly{
         margin: .2em auto;
         border: 3px solid;
@@ -158,5 +173,15 @@ h1{
     }
     #hourly ul{
         display:flex;
+    }
+    #page-header img{
+        width:160px;
+    }
+
+    #location {
+        font-size: 1em;
+    }
+    #site-brand{
+        font-size: 5em;
     }
 }
