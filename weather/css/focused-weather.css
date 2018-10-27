@@ -162,7 +162,9 @@ h1{
 
     #conditions{
         flex: 0 0 40%;
- 
+    }
+    #conditions h2{
+        font-size:3em;
     }
     .tile{
         margin:.4em;
@@ -173,17 +175,22 @@ h1{
         flex-basis:0;
 
     }
+    #wind h2{
+        font-size:3em;
+    }
     #temps{
 
         flex-grow:.5;
         flex-basis:0;
         font-size:2em;
     }
+
     #hourly{
         margin: .2em auto;
         border: 3px solid;
         border-radius: 15px;
     }
+
     #hourly ul{
         display:flex;
     }
@@ -201,4 +208,5 @@ h1{
         border-top:3px solid black;
         margin-top:20px;
     }
+ 
 }
