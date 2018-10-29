@@ -3,4 +3,10 @@
     display:flex;
     justify-content:space-around;
 }
+nav{
+    display:flex;
+}
+nav ul{
+    justify-content:space-around;
+}
 }

@@ -136,11 +136,3 @@ h1{
 
 /* large screen rules*/
 @media screen and (min-width:750px){
-    /*all large \screen css rules go here*/
-    nav>ul{
-        display:flex;
-        position: inherit;
-
-    }
-
-}
