@@ -192,6 +192,8 @@ h1{
 
     #hourly ul{
         display:flex;
+        overflow-x:scroll;
+        align-items:space-between;
     }
     #page-header img{
         width:160px;
