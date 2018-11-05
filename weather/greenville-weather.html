@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Focused weather for Greenville, SC"
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type= "text/css" href ="/weather/css/focused-weather.css" media="screen">
+    <meta name="description" content="Focused weather for Greenville, SC" <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/weather/css/focused-weather.css" media="screen">
     <title>Greenville, SC| Weather Site</title>
 
 </head>
+
 <body>
-    <header id = "page-header">
+    <header id="page-header">
         <p id="site-brand">
             <img id="logo" src="/weather/images/logo.jpeg" alt="Weather Site Logo">
             <i>The Weather Site</i>
         </p>
     </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/index.html" title="Go to Home Page">Home</a>
-                </li>
-                <li>Current</li>
-                <li>Search</li>
-                <li><a href= "/weather/franklin-weather.html" title = "This link redirects to this page">Franklin, ID</a></li>
-                <li><a href= "/weather/greenville-weather.html" title =" Greenville, SC weather">Greenville, SC</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li>
+                <a href="/index.html" title="Go to Home Page">Home</a>
+            </li>
+            <li>Current</li>
+            <li>Search</li>
+            <li><a href="/weather/franklin-weather.html" title="This link redirects to this page">Franklin, ID</a></li>
+            <li><a href="/weather/greenville-weather.html" title=" Greenville, SC weather">Greenville, SC</a></li>
+        </ul>
+    </nav>
+    <h1>
+        Greenville, SC
+    </h1>
+    <p id="location">
+        <b>Zip:</b>
+        29601 |
+        <b>Elevation:</b>
+        866 ft. |
+        <b>Location:</b>
+        34.85,-82.4
+    </p>
+    <main>
         <h1>
             Greenville, SC
         </h1>
-        <p id = "location">
-            <b>Zip:</b> 
+        <p id="location">
+            <b>Zip:</b>
             29601 |
-            <b>Elevation:</b> 
+            <b>Elevation:</b>
             866 ft. |
-            <b>Location:</b> 
-             34.85,-82.4 
+            <b>Location:</b>
+            34.85,-82.4
         </p>
-    
-    
-    <main>
-    <div id ="flex-container">
-        <section id= "temps" class ="tile">
-            <h2 class= "hidden">
-                Temperature
-            </h2>
-            <p id = "current-temp">65&deg;F</p>
-            <div>
-                <p id  = "high-temp">72F </p>
-                <p id = "low-temp">51F</p>
-            </div>
-            <p>Feels Like: 21F</p>
+        <div id="flex-container">
+            <section id="temps" class="tile">
+                <h2 class="hidden">
+                    Temperature
+                </h2>
+                <p id="current-temp">65&deg;F</p>
+                <div>
+                    <p id="high-temp">72F </p>
+                    <p id="low-temp">51F</p>
+                </div>
+                <p>Feels Like: 21F</p>
             </section>
-        <section id = "wind" class = "tile">
-            <h2 class= "hidden">Wind</h2>
-            <img src="#" alt="Diagram goes here">
-            <p><b>Speed:</b> 8 mph</p>
-            <p><b>Direction:</b> SW</p>
-        </section>
-        <section id = "conditions" class = "tile">
-            <h2> Thunderstorms </h2>
-            <img src="/weather/images/raindrops.jpg" alt="image goes here">
-        </section>
-    </div>
-        <section id = "hourly">
+            <section id="wind" class="tile">
+                <h2 class="hidden">Wind</h2>
+                <img src="#" alt="Diagram goes here">
+                <p><b>Speed:</b> 8 mph</p>
+                <p><b>Direction:</b> SW</p>
+            </section>
+            <section id="conditions" class="tile">
+                <h2> Thunderstorms </h2>
+                <img src="/weather/images/raindrops.jpg" alt="image goes here">
+            </section>
+        </div>
+        <section id="hourly">
             <h2>Hourly Forecast</h2>
             <ul>
                 <li>12 am: 55</li>
@@ -98,4 +108,5 @@
         &copy; 2018 Weather Site
     </footer>
 </body>
+
 </html>
