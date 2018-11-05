@@ -191,9 +191,14 @@ h1{
     }
 
     #hourly ul{
-        display:flex;
-        overflow-x:scroll;
-        align-items:space-between;
+        display: flex;
+        overflow-x: auto;
+        list-style-type: none;
+        align-items: space-between;
+
+    }
+    #hourly ul li{
+        text-align: justify;
     }
     #page-header img{
         width:160px;
