@@ -195,8 +195,6 @@ h1{
         display: flex;
         
         list-style-type: none;
-        align-items: space-between;
-
     }
     #hourly ul li{
         text-align: justify;
