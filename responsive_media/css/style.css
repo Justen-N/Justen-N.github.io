@@ -49,7 +49,10 @@ h1 {
 
 /*	Background Images - use with Small screens */
 
-.page-header {}
+.page-header {
+	background-image: url(/responsive_media/images/nps-logo-small.png),url(/responsive_media/images/canyon_banner_400.jpg);
+	background-position: right, center;
+}
 
 
 /*******************************
