@@ -51,6 +51,7 @@ h1 {
 
 .page-header {
 	background-image: url(/responsive_media/images/nps-logo-small.png),url(/responsive_media/images/canyon_banner_400.jpg);
+	background-repeat: no-repeat,no-repeat;
 	background-position: right, center;
 }
 
@@ -175,6 +176,7 @@ h1 {
 	/*	Background Images - Use with medium screens */
 	.page-header {
 		background-image: url(/responsive_media/images/nps-logo-med.png),url(/responsive_media/images/canyon_banner_800.jpg);
+		background-repeat: no-repeat,no-repeat;
 		background-position: right, center;
 	}
 	.page-nav {
@@ -223,6 +225,7 @@ h1 {
 	/*	Background Images - Use with large screens */
 	.page-header {
 		background-image: url(/responsive_media/images/nps-logo-large.png),url(/responsive_media/images/canyon_banner_1200.png);
+		background-repeat: no-repeat,no-repeat;
 		background-position: right, center;
 	}
 	.page-nav li {
