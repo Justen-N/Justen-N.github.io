@@ -173,7 +173,10 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {}
+	.page-header {
+		background-image: url(/responsive_media/images/nps-logo-med.png),url(/responsive_media/images/canyon_banner_800.jpg);
+		background-position: right, center;
+	}
 	.page-nav {
 		position: relative;
 	}
@@ -218,7 +221,10 @@ h1 {
 		line-height: 1.05;
 	}
 	/*	Background Images - Use with large screens */
-	.page-header {}
+	.page-header {
+		background-image: url(/responsive_media/images/nps-logo-large.png),url(/responsive_media/images/canyon_banner_1200.png);
+		background-position: right, center;
+	}
 	.page-nav li {
 		flex: 0 1 10%;
 	}
