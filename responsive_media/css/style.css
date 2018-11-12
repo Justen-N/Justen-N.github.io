@@ -53,7 +53,7 @@ h1 {
 	background-image: url(/responsive_media/images/nps-logo-small.png),url(/responsive_media/images/canyon_banner_400.jpg);
 	background-repeat: no-repeat,no-repeat;
 	background-position: right, center;
-	background-size: auto, initial;
+	background-size: cover, initial;
 }
 
 
@@ -179,7 +179,7 @@ h1 {
 		background-image: url(/responsive_media/images/nps-logo-med.png),url(/responsive_media/images/canyon_banner_800.jpg);
 		background-repeat: no-repeat,no-repeat;
 		background-position: right, center;
-		background-size: auto, initial;
+		background-size: cover, initial;
 	}
 	.page-nav {
 		position: relative;
@@ -229,7 +229,7 @@ h1 {
 		background-image: url(/responsive_media/images/nps-logo-large.png),url(/responsive_media/images/canyon_banner_1200.png);
 		background-repeat: no-repeat,no-repeat;
 		background-position: right, center;
-		background-size: auto, initial;
+		background-size: cover, initial;
 	}
 	.page-nav li {
 		flex: 0 1 10%;
