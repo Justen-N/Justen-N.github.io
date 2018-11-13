@@ -21,6 +21,14 @@ index
     font-weight: 600;
 }
 
+.large{
+    float:inline-start;
+}
+
+.small{
+    float:inline-start;
+}
+
 body{
     font-family: helvetica, verdana, sans-serif;
     font-size: 20px;
