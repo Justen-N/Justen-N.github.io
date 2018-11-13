@@ -11,7 +11,7 @@ index
 /* 1. Imports*/
 
 /* 1.1 Normalize*/
-@import "normalize.css";
+@import "/weather/css/normalize.css";
 /* 1.2 Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
