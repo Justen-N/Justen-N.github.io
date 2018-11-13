@@ -21,6 +21,10 @@ index
     font-weight: 600;
 }
 
+section img{
+    float:left;
+}
+
 .large, .small{
     clear:both;
 }
