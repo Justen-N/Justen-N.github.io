@@ -23,12 +23,8 @@ index
 
 section img{
     float:left;
-}
-
-.large, .small{
     clear:both;
 }
-
 
 body{
     font-family: helvetica, verdana, sans-serif;
