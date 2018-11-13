@@ -20,13 +20,23 @@ index
     font-size: 2em;
     font-weight: 600;
 }
+
 .large{
     float:left;
 }
+
 .small{
     float:left;
 }
 
+body{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: sansita, Eurostyle, sans-serif;
+}
 /*3. Small Screens */
 .large{
     display:none;
