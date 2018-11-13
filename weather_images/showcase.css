@@ -20,9 +20,8 @@ index
     font-size: 2em;
     font-weight: 600;
 }
-
 .large, .small{
-    position: static;
+    text-align: left;
 }
 body{
     font-family: helvetica, verdana, sans-serif;
