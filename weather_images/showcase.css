@@ -16,8 +16,16 @@ index
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* 2. General*/
-
-
+#site-brand {
+    font-size: 2em;
+    font-weight: 600;
+}
+.large{
+    float:left;
+}
+.small{
+    float:left;
+}
 
 /*3. Small Screens */
 .large{
@@ -32,6 +40,9 @@ index
     }
     .large{
         display:initial;
+    }
+    #site-brand{
+        font-size: 5em;
     }
 
 }
