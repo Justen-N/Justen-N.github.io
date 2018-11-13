@@ -130,6 +130,9 @@ h1{
 #conditions img{
     width:inherit;
 }
+#wind div{
+    background-image: url(/weather/images/wind-pointer-small.png);
+}
 h1{
     margin:0px;
 }
@@ -217,5 +220,8 @@ h1{
  
     .hidden{
         display:initial;
+    }
+    #wind div{
+        background-image: url(/weather/images/wind-pointer.png);
     }
 }
