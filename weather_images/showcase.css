@@ -21,6 +21,9 @@ index
     font-weight: 600;
 }
 
+.large, .small{
+    position: static;
+}
 body{
     font-family: helvetica, verdana, sans-serif;
     font-size: 20px;
