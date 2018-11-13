@@ -21,14 +21,14 @@ index
 
 /*3. Small Screens */
 .large{
-    display:hidden;
+    display:none;
 }
 
 
 /*4. Large Screens */
 @media screen and (min-width: 750px){
     .small{
-        display:hidden;
+        display:none;
     }
     .large{
         display:initial;
