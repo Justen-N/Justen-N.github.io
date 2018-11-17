@@ -222,12 +222,11 @@ h1{
     .hidden{
         display:initial;
     }
-    #pointer{
-        
+    #pointer{   
         background-image: url("/weather/images/wind-pointer.png");
         background-repeat: no-repeat;
         background-position: center;
         position:center;
-        width:150px;
+        size:150px;
     }
 }
