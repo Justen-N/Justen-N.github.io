@@ -131,8 +131,8 @@ h1{
     width:inherit;
 }
 #pointer{
-    background-image: url('/weather/images/wind-pointer-small.png');
-    size:75px;
+    background-image: url(/weather/images/wind-pointer-small.png);
+    background-size:150px 150px;
 }
 h1{
     margin:0px;
@@ -223,10 +223,11 @@ h1{
         display:initial;
     }
     #pointer{   
-        background-image: url('/weather/images/wind-pointer.png');
+        background-image: url(/weather/images/wind-pointer.png);
         background-repeat: no-repeat;
+        background-size:150px 150px;
         background-position: center;
         position: relative;
-        size:150px;
+        
     }
 }
