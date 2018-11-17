@@ -130,7 +130,7 @@ h1{
 #conditions img{
     width:inherit;
 }
-.pointer{
+#pointer{
     background-image: url("/weather/images/wind-pointer-small.png");
     width:75px;
 }
@@ -222,8 +222,12 @@ h1{
     .hidden{
         display:initial;
     }
-    .pointer{
-        width: 100px;
+    #pointer{
+        
         background-image: url("/weather/images/wind-pointer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        position:center;
+        width:150px;
     }
 }
