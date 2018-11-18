@@ -6,7 +6,7 @@ console.log('My javascript is being read.')
 const temp = 31;
 const speed = 5;
 const direction = "NE";
-const condition = "wet";
+const condition = "overcast";
 let selectedCondition = getCondition(condition);
 buildWC(speed,temp);
 windDial(direction);
@@ -79,37 +79,44 @@ function windDial(direction){
 
    function getCondition(currentCondition){
         //switch statement
+        console.log("inside getCondition");
         cond = currentCondition.toUpperCase();
-        switch(cond){
-            //umbrella for rain
-            case cond.includes("WET"):
-            case cond.includes("RAIN"):
-            case cond.includes("STORM"):
-            case cond.includes("THUNDER"):
-                return "rain";
-            //snow shelters here
-            case cond.includes("SNOW"):
-            case cond.includes("SLEET"):
-            case cond.includes("FLURRIES"):
-            case cond.includes("BLIZZARD"):
+        console.log(cond);
+    
+            if (cond.includes("WET") ||
+            cond.includes("RAIN") ||
+            cond.includes("STORM") ||
+            cond.includes("THUNDER")){
+                console.log(cond + " made it to wet")
+                return "rain";}
+
+            else if(cond.includes("SNOW")||
+            cond.includes("SLEET")||
+            cond.includes("FLURRIES")||
+            cond.includes("BLIZZARD")){
                 return "snow";
-            //Fog 
-            case cond.includes("FOG"):
-            case cond.includes("HAZE"):
-            case cond.includes("MIST"):
-            case cond.includes("MURK"):
+            }
+            else if( 
+            cond.includes("FOG")||
+            cond.includes("HAZE")||
+            cond.includes("MIST")||
+            cond.includes("MURK")){
                 console.log(cond + " fog.")
                 return "fog";
-            case cond.includes("CLOUD"):
-            case cond.includes("OVERCAST"):
-            case cond.includes("SLIGHTLY CLOUDY"):
-            case cond.includes("PARTLY CLOUDY"):
+            }
+            else if(
+            cond.includes("CLOUD")||
+            cond.includes("OVERCAST")||
+            cond.includes("SLIGHTLY CLOUDY")||
+            cond.includes("PARTLY CLOUDY")){
                 return "cloud";
-            default:
+            }
+            else{
                 return "clear";
             }
         }
     function getSummaryImage(condition){
+        console.log(condition + "in getSummaryImage")
         const image = document.getElementById("flex-container");
         switch(condition){
             case "clear":
