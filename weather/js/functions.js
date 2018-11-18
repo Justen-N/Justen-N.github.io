@@ -6,8 +6,11 @@ console.log('My javascript is being read.')
 const temp = 31;
 const speed = 5;
 const direction = "NE";
+const condition = "wet";
+let selectedCondition = getCondition(condition);
 buildWC(speed,temp);
 windDial(direction);
+getSummaryImage(selectedCondition);
 
 //build and display the "Feels Like" section
 function buildWC(speed,temp){
@@ -75,5 +78,55 @@ function windDial(direction){
    // finds the current condition for background display
 
    function getCondition(currentCondition){
-    
-   }
+        //switch statement
+        cond = currentCondition.toUpperCase();
+        switch(cond){
+            //umbrella for rain
+            case cond.includes("WET"):
+            case cond.includes("RAIN"):
+            case cond.includes("STORM"):
+            case cond.includes("THUNDER"):
+                return "rain";
+            //snow shelters here
+            case cond.includes("SNOW"):
+            case cond.includes("SLEET"):
+            case cond.includes("FLURRIES"):
+            case cond.includes("BLIZZARD"):
+                return "snow";
+            //Fog 
+            case cond.includes("FOG"):
+            case cond.includes("HAZE"):
+            case cond.includes("MIST"):
+            case cond.includes("MURK"):
+                console.log(cond + " fog.")
+                return "fog";
+            case cond.includes("CLOUD"):
+            case cond.includes("OVERCAST"):
+            case cond.includes("SLIGHTLY CLOUDY"):
+            case cond.includes("PARTLY CLOUDY"):
+                return "cloud";
+            default:
+                return "clear";
+            }
+        }
+    function getSummaryImage(condition){
+        const image = document.getElementById("flex-container");
+        switch(condition){
+            case "clear":
+                image.setAttribute("class", condition);
+                break;
+            case "rain":
+                image.setAttribute("class", condition);
+                break;
+
+            case "fog":
+                image.setAttribute("class", condition);
+                break;
+            case "cloud":
+                image.setAttribute("class", condition);
+                break;
+            case "snow":
+                image.setAttribute("class", condition);
+                break;
+        }
+    }
