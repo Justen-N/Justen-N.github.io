@@ -78,6 +78,11 @@ footer{
     flex-flow: column nowrap;
     justify-content: space-between;
 }
+
+#flex-container{
+    background-size:cover;
+}
+
 /* 3.  Mobile First (styles specific to small screens)*/
 
 
@@ -140,14 +145,14 @@ h1{
 }
 
 #pointer{
-    background: url(/weather/images/wind-pointer-small.png);
-    background-size: 75px 76px;
-    background-repeat: no-repeat;
+    background: no-repeat center/85% url(/weather/images/wind-pointer-small.png);
     width: 80px;
     height: 80px;
-    position: absolute;
-    top:24%;
-    left:34%;
+    z-index: 100;
+    margin: -.6em auto 0;
+}
+#windspeed{
+  margin: -2.5em auto 10px;
 }
 h1{
     margin:0px;
@@ -155,7 +160,46 @@ h1{
 .hidden{
     display:none;
 }
-
+.clear{
+    background-image: url(/weather_images/images/clear-300x186.jpg);
+}
+.rain{
+    background-image: url(/weather_images/images/rain-300x200.jpg);
+}
+.snow{
+    background-image: url(/weather_images/images/snow-300x275.jpg);
+}
+.fog{
+    background-image: url(/weather_images/images/fog-300x159.jpg);
+}
+.clouds{
+    background-image: url(/weather_images/images/clouds-300x188.jpg);
+}
+/* these are the rotation rules for wind direction*/
+.n{
+    transform:rotate(0deg);
+}
+.nw{
+    transform:rotate(45deg);
+}
+.w{
+    transform:rotate(90deg);
+}
+.sw{
+    transform:rotate(135deg);
+}
+.s{
+    transform:rotate(180deg);
+}
+.se{
+    transform:rotate(225deg);
+}
+.e{
+    transform:rotate(270deg);
+}
+.ne{
+    transform:rotate(315deg);
+}
 /* large screen rules*/
 @media screen and (min-width:750px){
     nav>ul{
@@ -237,16 +281,28 @@ h1{
     .hidden{
         display:initial;
     }
-    #pointer{   
-        background-image: url(/weather/images/wind-pointer.png);
-        background-size: cover;
+    #pointer{
+        background: no-repeat center/85% url('/weather/images/wind-pointer.png');
         width:150px;
         height:150px;
-        top:42%;
-        left:16%;
+        margin: -.6em auto 0;
     }
-    #cardinal, #windspeed{
-        position:relative;
-        bottom:30px;
+    #windspeed{
+        margin: -5em auto 40px;
+    }
+    .clear{
+        background-image: url(/weather_images/images/clear-700x400.jpg);
+    }
+    .rain{
+        background-image: url(/weather_images/images/rain-700x467.jpg);
+    }
+    .snow{
+        background-image: url(/weather_images/images/snow-700x642.jpg);
+    }
+    .fog{
+        background-image: url(/weather_images/images/fog-700x372.jpg);
+    }
+    .clouds{
+        background-image: url(/weather_images/images/clouds-700x439.jpg);
     }
 }
