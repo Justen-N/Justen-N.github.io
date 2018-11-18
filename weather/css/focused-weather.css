@@ -72,7 +72,12 @@ footer{
 #temps div p{
     display:inline-block;
 }
-
+#wind{
+    position:relative;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
 /* 3.  Mobile First (styles specific to small screens)*/
 
 
@@ -130,9 +135,19 @@ h1{
 #conditions img{
     width:inherit;
 }
+#cardinal{
+    margin-bottom:0px;
+}
+
 #pointer{
-    background-image: url(/weather/images/wind-pointer-small.png);
-    background-size:150px 150px;
+    background: url(/weather/images/wind-pointer-small.png);
+    background-size: 75px 76px;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:24%;
+    left:34%;
 }
 h1{
     margin:0px;
@@ -164,7 +179,7 @@ h1{
     }
 
     #conditions{
-        flex: 0 0 40%;
+        flex: 1 0 40%;
     }
     #conditions h2{
         font-size:3em;
@@ -174,16 +189,16 @@ h1{
         height:inherit;
     }
     #wind{
-        flex-grow: .5;
-        flex-basis:0;
+        flex-grow:3;
 
     }
     #wind h2{
         font-size:3em;
+        margin-bottom:0px;
     }
     #temps{
 
-        flex-grow:.5;
+        flex-grow:1;
         flex-basis:0;
         font-size:2em;
     }
@@ -224,10 +239,14 @@ h1{
     }
     #pointer{   
         background-image: url(/weather/images/wind-pointer.png);
-        background-repeat: no-repeat;
-        background-size:150px 150px;
-        background-position: center;
-        position: relative;
-        
+        background-size: cover;
+        width:150px;
+        height:150px;
+        top:42%;
+        left:16%;
+    }
+    #cardinal, #windspeed{
+        position:relative;
+        bottom:30px;
     }
 }
