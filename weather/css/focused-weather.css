@@ -172,7 +172,7 @@ h1{
 .fog{
     background-image: url(/weather_images/images/fog-300x159.jpg);
 }
-.clouds{
+.cloud{
     background-image: url(/weather_images/images/clouds-300x188.jpg);
 }
 /* these are the rotation rules for wind direction*/
@@ -302,7 +302,7 @@ h1{
     .fog{
         background-image: url(/weather_images/images/fog-700x372.jpg);
     }
-    .clouds{
+    .cloud{
         background-image: url(/weather_images/images/clouds-700x439.jpg);
     }
 }
