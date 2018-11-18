@@ -78,22 +78,24 @@ function windDial(direction){
    // finds the current condition for background display
 
    function getCondition(currentCondition){
-        //switch statement
+        //debug
         console.log("inside getCondition");
+        // lowercase sanitization
         cond = currentCondition.toUpperCase();
         console.log(cond);
-    
+            //takes currentCondition variable and attempts to find a matching weather condition
             if (cond.includes("WET") ||
             cond.includes("RAIN") ||
             cond.includes("STORM") ||
             cond.includes("THUNDER")){
-                console.log(cond + " made it to wet")
+                console.log(cond + " rain");
                 return "rain";}
 
             else if(cond.includes("SNOW")||
             cond.includes("SLEET")||
             cond.includes("FLURRIES")||
             cond.includes("BLIZZARD")){
+                console.log(cond =" snow");
                 return "snow";
             }
             else if( 
@@ -101,7 +103,7 @@ function windDial(direction){
             cond.includes("HAZE")||
             cond.includes("MIST")||
             cond.includes("MURK")){
-                console.log(cond + " fog.")
+                console.log(cond + " fog.");
                 return "fog";
             }
             else if(
@@ -109,9 +111,11 @@ function windDial(direction){
             cond.includes("OVERCAST")||
             cond.includes("SLIGHTLY CLOUDY")||
             cond.includes("PARTLY CLOUDY")){
+                console.log(cond + "cloud");
                 return "cloud";
             }
             else{
+                console.log("default case")
                 return "clear";
             }
         }
