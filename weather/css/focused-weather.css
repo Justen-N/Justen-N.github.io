@@ -57,8 +57,9 @@ nav {
     bottom: 0;
     left: 0;
     border: 1px solid black;
-    font-size: 3vw;
+    font-size: 4vw;
     padding-left:0px;
+    background-color: #0e89d5;
 }
 
 footer{
@@ -85,7 +86,10 @@ footer{
 
 /* 3.  Mobile First (styles specific to small screens)*/
 
+nav ul{
+    width:100%;
 
+}
 #page-header *{
     top:0;
     left:0;
@@ -144,6 +148,10 @@ h1{
     margin-bottom:0px;
 }
 
+nav{
+    right:0;
+    background-color: #ffffff;
+}
 #pointer{
     background: no-repeat center/85% url(/weather/images/wind-pointer-small.png);
     width: 80px;
