@@ -83,7 +83,12 @@ footer{
 #flex-container{
     background-size:cover;
 }
-
+.hide{
+    display:none;
+}
+.show{
+    display:initial;
+}
 /* 3.  Mobile First (styles specific to small screens)*/
 
 nav ul{
@@ -97,15 +102,20 @@ nav ul{
 }
 
 #site-brand{
-    font-size: 1.5em;
+  font-size:1em
 }
 
 #location {
-    font-size: .65em;
+    font-size: .6em;
+    display:inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
 
 h1{
-    font-size:3em;
+    font-size:2em;
 }
 .tile{
     width: 75%;
@@ -141,9 +151,7 @@ h1{
 #temps p{
     margin:0px;
 }
-#conditions img{
-    width:inherit;
-}
+
 #cardinal{
     margin-bottom:0px;
 }
@@ -153,7 +161,7 @@ nav{
     background-color: #ffffff;
 }
 #pointer{
-    background: no-repeat center/85% url(/weather/images/wind-pointer-small.png);
+    background: no-repeat center/100% url(/weather/images/wind-pointer-small.png);
     width: 80px;
     height: 80px;
     z-index: 100;
@@ -161,6 +169,10 @@ nav{
 }
 #windspeed{
   margin: -2.5em auto 10px;
+}
+#gust{
+    margin-top:0px;
+    margin-bottom:20px;
 }
 h1{
     margin:0px;
@@ -187,25 +199,25 @@ h1{
 .n{
     transform:rotate(0deg);
 }
-.nw{
+.ne{
     transform:rotate(45deg);
 }
-.w{
+.e{
     transform:rotate(90deg);
 }
-.sw{
+.se{
     transform:rotate(135deg);
 }
 .s{
     transform:rotate(180deg);
 }
-.se{
+.sw{
     transform:rotate(225deg);
 }
-.e{
+.w{
     transform:rotate(270deg);
 }
-.ne{
+.nw{
     transform:rotate(315deg);
 }
 /* large screen rules*/
@@ -224,7 +236,9 @@ h1{
     nav{
         position: static;
     }
-
+    h1{
+        font-size: 5em;
+    }
     #flex-container{
         display:flex;
         align-content:space-between;
@@ -264,12 +278,13 @@ h1{
 
     #hourly ul{
         display: flex;
-        
         list-style-type: none;
     }
     #hourly ul li{
-        text-align: justify;
-        
+       white-space: nowrap;
+       padding: 10px;
+       
+        border-right: 1px solid;
     }
     #page-header img{
         width:160px;

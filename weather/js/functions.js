@@ -2,15 +2,15 @@
 
 //make sure script is attached correctly
 console.log('My javascript is being read.')
-// test variables ( currently  in production)
-const temp = 31;
-const speed = 5;
-const direction = "NE";
-const condition = "overcast";
-let selectedCondition = getCondition(condition);
-buildWC(speed,temp);
-windDial(direction);
-getSummaryImage(selectedCondition);
+// test variables 
+//const temp = 31;
+//const speed = 5;
+//const direction = "NE";
+//const condition = "overcast";
+//let selectedCondition = getCondition(condition);
+//buildWC(speed,temp);
+//windDial(direction);
+//getSummaryImage(selectedCondition);
 
 //build and display the "Feels Like" section
 function buildWC(speed,temp){
@@ -18,13 +18,13 @@ function buildWC(speed,temp){
 
     // make the windchill calculations work ( break out in individual pieces if not working)
     let wc = Math.floor(35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16));
-    console.log(wc);
+    console.log(wc+ "calculated windchill");
 
     // If chill is greater than temp, return the temp
     wc = (wc > temp)?temp:wc;
     
     // Display the windchill
-    console.log(wc);
+    console.log(wc+ "rounded windchill");
     wc = 'Feels like ' + wc + '&deg;F';
     feelTemp.innerHTML = wc;
 }
@@ -236,3 +236,53 @@ function windDial(direction){
           })
           .catch(error => console.log('There was an error: ', error))
       } // end getHourly function
+
+      function buildPage(locData){
+            //Task 1 - feed data to Windchill, Dial and Image Functions
+            
+            //windchill data and function call
+            let windSpeed = locData.windSpeed;
+            console.log(windSpeed + " windspeed for buildpage");
+            let currentTemp = locData.currentTemp;
+            console.log(currentTemp + " temp for buildpage");
+            buildWC(windSpeed,currentTemp);
+
+            //Dial call
+            windDial(locData.windDirection);
+            
+            // Summary Image call
+            let condition = getCondition(locData.summary);
+            getSummaryImage(condition);
+            //Task 2 - Populate Location information   
+            
+            //set location specific information
+            document.getElementById("zip").innerHTML = locData.postal+ " |";
+            document.getElementById("elevation").innerHTML = locData.elevation +" ft. |";
+            document.getElementById("commonName").innerHTML = locData.name + ", " + locData.stateAbbr;
+            
+            // round coordinates to small numbers and add a space
+            let coord = locData.geoposition.split(",");
+            let coordLat = Math.round(coord[0]*100)/100;
+            let coordLong = Math.round(coord[1]*100)/100;
+            console.log(coordLat);
+            document.getElementById("coords").innerHTML = coordLat + ", "+ coordLong;
+            //Task 3 - Populate Weather Information
+            
+            // modify temps
+            document.getElementById("current-temp").innerHTML = locData.currentTemp +"&deg;F";
+            document.getElementById("high-temp").innerHTML = locData.pastHigh + "&deg;F";
+            document.getElementById("low-temp").innerHTML = locData.pastLow +"&deg;F";
+
+            // modify wind info
+            document.getElementById("windspeed").innerHTML = locData.windSpeed + " mph";
+            document.getElementById("direction").innerHTML = "Direction: "+locData.windDirection;
+            document.getElementById("gust").innerHTML = "Gusts: " + locData.windGust;
+
+            // set weather condition
+            document.getElementById("condition").innerHTML = locData.summary;
+            // Hide status and show main
+            const unhide = document.getElementById("main");
+            unhide.setAttribute('class','show');
+            const shown = document.getElementById("status");
+            shown.setAttribute('class','hide')
+      }

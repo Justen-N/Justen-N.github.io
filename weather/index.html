@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Focused weather for users location" >
+    <link rel="stylesheet" type="text/css" href="/weather/css/focused-weather.css" media="screen">
+    <title>Current Weather | The Weather Site</title>
 </head>
-<!--Collaboration: Justen Neeley  -->Collaboration: Justen Neeley */
+<!--Collaboration: Justen Neeley  -->
 <body>
     <header id="page-header">
         <p id="site-brand">
@@ -17,18 +19,83 @@
     <nav>
         <ul>
             <li>
-                <a href="/index.html" title="Go to Home Page">Home</a>
             </li>
-            <li>Current</li>
+            <li><a href="/weather/index.html" title="Weather at your location">Current</a></li>
             <li>Search</li>
             <li><a href="/weather/franklin-weather.html" title="This link redirects to this page">Franklin, ID</a></li>
             <li><a href="/weather/greenville-weather.html" title=" Greenville, SC weather">Greenville, SC</a></li>
         </ul>
     </nav>
-    <p id="status"></p>
-    <main class = "hidden">
-
+    <p id= "status" class ="show"></p>
+    <main id = "main" class = "hide">
+        <h1 id="commonName">
+           
+        </h1>
+        <div id="location">
+            <b>Zip:</b>
+            <p id ="zip">83237</p>
+            <b>Elevation: </b>
+            <p id="elevation">4968</p> 
+            <b>Location:</b>
+            <p id= "coords">42.07, 111.79</p>
+        </div>
+        <div id="flex-container">
+            <section id="temps" class="tile">
+                <h2 class="hidden">
+                    Temperature
+                </h2>
+                <p id="current-temp">55&deg;F</p>
+                <div>
+                    <p id="high-temp">64F </p>
+                    <p id="low-temp">41F</p>
+                </div>
+                <p id = "feel"></p>
+            </section>
+            <section id="wind" class="tile">
+                <h2 class="hidden">Wind</h2>
+                <p><b>N</b></p>
+                <div id= "pointer" class = "nw"></div>
+                <p id ="windspeed">5 mph</p>
+                <p id = "direction"></p>
+                <p id ="gust"></p>
+            </section>
+            <section id="conditions" class="tile">
+                <h2 id= "condition"> Rain </h2>
+            </section>
+        </div>
+        <section id="hourly">
+            <h2>Hourly Forecast</h2>
+            <ul>
+                <li>12 am: 41&deg;F</li>
+                <li>1 am: 41&deg;F</li>
+                <li>2 am: 41&deg;F</li>
+                <li>3 am: 41&deg;F</li>
+                <li>4 am: 41&deg;F</li>
+                <li>5 am: 41&deg;F</li>
+                <li>6 am: 42&deg;F</li>
+                <li>7 am: 44&deg;F</li>
+                <li>8 am: 44&deg;F</li>
+                <li>9 am: 46&deg;F</li>
+                <li>10 am: 49&deg;F</li>
+                <li>11 am: 51&deg;F</li>
+                <li>12 pm: 55&deg;F</li>
+                <li>1 pm: 58&deg;F</li>
+                <li>2 pm: 62&deg;F</li>
+                <li>3 pm: 64&deg;F</li>
+                <li>4 pm: 64&deg;F</li>
+                <li>5 pm: 62&deg;F</li>
+                <li>6 pm: 61&deg;F</li>
+                <li>7 pm: 60&deg;F</li>
+                <li>8 pm: 59&deg;F</li>
+                <li>9 pm: 58&deg;F</li>
+                <li>10 pm: 52&deg;F</li>
+                <li>11 pm: 48&deg;F</li>
+            </ul>
+        </section>
     </main>
+    <footer>
+        &copy; 2018 Weather Site
+    </footer>
     <script src="/weather/js/functions.js"></script>
     <script src="/weather/js/geo_loc.js"></script>
 </body>

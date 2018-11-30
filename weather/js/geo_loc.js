@@ -8,6 +8,7 @@ getGeoLocation();
 // get current location by long and lat
 function getGeoLocation(){
     const STATUS = document.getElementById('status');
+    const COORDS = document.getElementById('coords')
     STATUS.innerHTML = 'Getting Location...';
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -17,10 +18,9 @@ function getGeoLocation(){
          // Combine the values
          const LOCALE = LAT + "," + LONG;
          console.log(`Lat and Long are: ${LOCALE}.`);
+         
          // Call getCode function, send locale
          getCode(LOCALE);
-      
-      
         })
        } else {
         STATUS.innerHTML = "Your browser doesn't support Geolocation or it is not enabled!";
