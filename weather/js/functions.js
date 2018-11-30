@@ -122,22 +122,28 @@ function windDial(direction){
     function getSummaryImage(condition){
         console.log(condition + "in getSummaryImage")
         const image = document.getElementById("flex-container");
+        const small_image = document.getElementById("weather_img");
         switch(condition){
             case "clear":
                 image.setAttribute("class", condition);
+                small_image.setAttribute("class", condition);
                 break;
             case "rain":
                 image.setAttribute("class", condition);
+                small_image.setAttribute("class", condition);
                 break;
 
             case "fog":
                 image.setAttribute("class", condition);
+                small_image.setAttribute("class", condition);
                 break;
             case "cloud":
                 image.setAttribute("class", condition);
+                small_image.setAttribute("class", condition);
                 break;
             case "snow":
                 image.setAttribute("class", condition);
+                small_image.setAttribute("class", condition);
                 break;
         }
     }
@@ -275,8 +281,8 @@ function windDial(direction){
 
             // modify wind info
             document.getElementById("windspeed").innerHTML = locData.windSpeed + " mph";
-            document.getElementById("direction").innerHTML = "Direction: "+locData.windDirection;
-            document.getElementById("gust").innerHTML = "Gusts: " + locData.windGust;
+            document.getElementById("direction").innerHTML = "<b>Direction: </b>"+locData.windDirection;
+            document.getElementById("gust").innerHTML = "<b>Gusts: </b>" + locData.windGust;
 
             // set weather condition
             document.getElementById("condition").innerHTML = locData.summary;

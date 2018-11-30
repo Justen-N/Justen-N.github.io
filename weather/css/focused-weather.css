@@ -223,6 +223,18 @@ h1{
 .nw{
     transform:rotate(315deg);
 }
+#conditions{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#weather_img{
+    width: 100px;
+    height:100px;
+    align-self: center;
+}
+
 /* large screen rules*/
 @media screen and (min-width:750px){
     nav>ul{
@@ -315,6 +327,10 @@ h1{
     }
     #windspeed{
         margin: -5em auto 40px;
+    }
+    #weather_img{
+        width:250px;
+        height:250px;
     }
     .clear{
         background-image: url(/weather_images/images/clear-700x400.jpg);
