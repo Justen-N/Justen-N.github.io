@@ -280,6 +280,9 @@ function windDial(direction){
 
             // set weather condition
             document.getElementById("condition").innerHTML = locData.summary;
+            
+            // set title element
+            document.title = locData.name +", "+locData.stateAbbr + " | Weather Site";
             // Hide status and show main
             const unhide = document.getElementById("main");
             unhide.setAttribute('class','show');
