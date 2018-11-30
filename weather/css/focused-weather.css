@@ -89,6 +89,9 @@ footer{
 .show{
     display:initial;
 }
+footer picture{
+    float:right;
+}
 /* 3.  Mobile First (styles specific to small screens)*/
 
 nav ul{
