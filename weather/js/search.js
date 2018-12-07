@@ -15,35 +15,39 @@ function processJSON(searchValue) {
     // Get Data from the Autocomplete API
     const API_KEY = "MQv9yHvhKRzuqis8pW460KHVjOjmE6El";
     let URL = "https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" + API_KEY + "&q=" + searchValue;
-    
+
     fetch(URL)
-    .then(response => response.json())
-    .then(function (data) {
-    console.log('Json object from autocomplete API:');
-    console.log(data); // Log what is returned
-      
-      // Build a list of returned locations
-      let list = '<ul>';
-      for (let i = 0, n = data.length; i < n; i++) {
-        let cityKey = data[i].Key;
-        let cityName = data[i].LocalizedName;
-        let stateCode = data[i].AdministrativeArea.ID;
-        let locationName = cityName+', '+stateCode;
-        list += "<li><a data-key='" + cityKey + "' href='https://www.accuweather.com/ajax-service/select-city?cityId=" + cityKey + "&lang=en-us' title='See weather information for " + locationName + "' target='_blank'>" + locationName + "</a></li>";
-      };
-      list += '</ul>';
-      // Inject the list to the search page
-      let searchResults = document.getElementById("searchResults");
-      searchResults.innerHTML = list;
-    })  .catch(error => console.log('There was an error: ', error))
-  } // ends the processJSON function
+        .then(response => response.json())
+        .then(function (data) {
+            console.log('Json object from autocomplete API:');
+            console.log(data); // Log what is returned
+
+            // Build a list of returned locations
+            let list = '<ul>';
+            for (let i = 0, n = data.length; i < n; i++) {
+                let cityKey = data[i].Key;
+                let cityName = data[i].LocalizedName;
+                let stateCode = data[i].AdministrativeArea.ID;
+                let locationName = cityName + ', ' + stateCode;
+                list += "<li><a data-key='" + cityKey + "' href='https://www.accuweather.com/ajax-service/select-city?cityId=" + cityKey + "&lang=en-us' title='See weather information for " + locationName + "' target='_blank'>" + locationName + "</a></li>";
+            };
+            list += '</ul>';
+            // Inject the list to the search page
+            let searchResults = document.getElementById("searchResults");
+            searchResults.innerHTML = list;
+        }).catch(error => console.log('There was an error: ', error))
+} // ends the processJSON function
 
 
-  RESULTS.addEventListener("onClick",function (){
-      let locationKey = event.target.Key;
-      if (locationKey != null){
-          onclick.event.preventDefault();
-          getLocationByKey(locationKey);
-      }
-  }
-  )
+RESULTS.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("event listener called");
+    let locationKey = event.target.Key;
+    console.log(locationKey)
+    if (locationKey != null) {
+        console.log(" inside locationKey If")
+
+        getLocationByKey(locationKey);
+    }
+}
+)
