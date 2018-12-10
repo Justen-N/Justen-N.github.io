@@ -40,14 +40,16 @@ function processJSON(searchValue) {
 
 
 RESULTS.addEventListener("click", function (event) {
-    event.preventDefault();
+    
     console.log("event listener called");
-    let locationKey = event.target.Key;
+    console.log(event.target.getAttribute("data-key"));
+    let locationKey = event.target.getAttribute("data-key");
     console.log(locationKey)
     if (locationKey != null) {
         console.log(" inside locationKey If")
-
+        event.preventDefault();
         getLocationByKey(locationKey);
     }
+    document.getElementById("search").setAttribute("class","hide");
 }
 )
